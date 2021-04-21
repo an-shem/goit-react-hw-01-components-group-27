@@ -1,22 +1,19 @@
+import StatisticsListItem from '../StatisticsListItem/StatisticsListItem';
 import styles from './StatisticsList.module.css';
+
 const StatisticsList = ({ stats }) => (
   <ul className={styles.statList}>
-    <li className={styles.item}>
-      <span className={styles.label}>.docx</span>
-      <span className={styles.percentage}>4%</span>
-    </li>
-    <li className="styles.item">
-      <span className="styles.label">.mp3</span>
-      <span className="styles.percentage">14%</span>
-    </li>
-    <li className="styles.item">
-      <span className="styles.label">.pdf</span>
-      <span className="styles.percentage">41%</span>
-    </li>
-    <li className="styles.tem">
-      <span className="styles.label">.mp4</span>
-      <span className="styles.percentage">12%</span>
-    </li>
+    {stats.map(stat => (
+      <StatisticsListItem key={stat.id} stat={stat} color={getColor()} />
+    ))}
   </ul>
 );
 export default StatisticsList;
+
+function getColor() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+  let color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+  return color;
+}
