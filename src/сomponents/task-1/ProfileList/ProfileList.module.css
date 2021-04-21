@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-li {
+.stats li {
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
