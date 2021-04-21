@@ -4,13 +4,13 @@ import styles from './StatisticsList.module.css';
 const StatisticsList = ({ stats }) => (
   <ul className={styles.statList}>
     {stats.map(stat => (
-      <StatisticsListItem key={stat.id} stat={stat} color={getColor()} />
+      <StatisticsListItem key={stat.id} stat={stat} color={getRandomColor()} />
     ))}
   </ul>
 );
 export default StatisticsList;
 
-function getColor() {
+function getRandomColor() {
   let r = Math.floor(Math.random() * 256);
   let g = Math.floor(Math.random() * 256);
   let b = Math.floor(Math.random() * 256);
