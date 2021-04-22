@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import StatisticsListItem from '../StatisticsListItem/StatisticsListItem';
 import styles from './StatisticsList.module.css';
 
@@ -8,6 +9,11 @@ const StatisticsList = ({ stats }) => (
     ))}
   </ul>
 );
+
+StatisticsList.propTypes = {
+  stats: PropTypes.array.isRequired,
+};
+
 export default StatisticsList;
 
 function getRandomColor() {

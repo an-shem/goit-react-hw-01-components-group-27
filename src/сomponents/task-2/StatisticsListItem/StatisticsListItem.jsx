@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './StatisticsListItem.module.css';
 
 const StatisticsListItem = ({ stat, color }) => (
@@ -6,5 +7,10 @@ const StatisticsListItem = ({ stat, color }) => (
     <span className={styles.percentage}>{stat.percentage}%</span>
   </li>
 );
+
+StatisticsListItem.propTypes = {
+  stat: PropTypes.object.isRequired,
+  color: PropTypes.string.isRequired,
+};
 
 export default StatisticsListItem;

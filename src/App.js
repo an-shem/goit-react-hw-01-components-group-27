@@ -1,11 +1,13 @@
 import user from './data/user.json';
 import friends from './data/friends.json';
 import statisticalData from './data/statistical-data.json';
+import transactions from './data/transactions.json';
 
 import Profile from './сomponents/task-1/Profile/Profile.jsx';
 import Statistics from './сomponents/task-2/Statistics/Statistics.jsx';
 import Container from './сomponents/Container/Container';
 import FriendList from './сomponents/task-3/FriendList/FriendList';
+import TransactionHistory from './сomponents/task-4/TransactionHistory/TransactionHistory';
 
 function App() {
   return (
@@ -30,6 +32,11 @@ function App() {
         <br />
         <br />
         <FriendList friends={friends} />
+        <br />
+        <br />
+        <br />
+        <br />
+        <TransactionHistory items={transactions} />;
       </Container>
     </div>
   );
