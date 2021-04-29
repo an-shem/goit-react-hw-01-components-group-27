@@ -3,11 +3,11 @@ import friends from './data/friends.json';
 import statisticalData from './data/statistical-data.json';
 import transactions from './data/transactions.json';
 
-import Profile from './сomponents/task-1/Profile/Profile.jsx';
-import Statistics from './сomponents/task-2/Statistics/Statistics.jsx';
+import Profile from './сomponents/social-profile/Profile/Profile';
+import Statistics from './сomponents/statistics/Statistics/Statistics';
 import Container from './сomponents/Container/Container';
-import FriendList from './сomponents/task-3/FriendList/FriendList';
-import TransactionHistory from './сomponents/task-4/TransactionHistory/TransactionHistory';
+import FriendList from './сomponents/friend-list/FriendList/FriendList';
+import TransactionHistory from './сomponents/transaction-history/TransactionHistory/TransactionHistory';
 
 function App() {
   return (
