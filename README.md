@@ -1,5 +1,5 @@
-# goit-react-hw-01-components
-ДЗ - 1 по React
+# goit-react-hw-01-components-group-27
+ДЗ - 1 по React group-27
 
 # Getting Started with Create React App
 
